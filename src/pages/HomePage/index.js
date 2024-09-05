@@ -1,9 +1,10 @@
 import React from 'react';
+import SideNavBar from '../../widgets/SideNavBar';
 
 const Index = () => {
     return (
         <div>
-            <h1>Home</h1>
+            <SideNavBar />
         </div>
     );
 };

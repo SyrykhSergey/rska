@@ -1,0 +1,34 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #001529; /* Темный цвет Ant Design */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.ant-menu {
+    background-color: #001529; /* Цвет фона */
+    height: 100vh;
+    border-right: none;
+}
+
+.ant-menu-item {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 0 !important;
+    transition: background-color 0.3s ease;
+}
+
+.ant-menu-item:hover {
+    background-color: #1890ff; /* Синий при наведении */
+}
+
+.ant-menu-item-selected {
+    background-color: #1890ff; /* Цвет выбранного пункта меню */
+    border-radius: 0 !important;
+}
