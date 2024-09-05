@@ -1,0 +1,54 @@
+/* Основной контейнер с тёмным фоном */
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; /* Чёрный фон */
+    overflow: hidden;
+}
+
+/* Стиль для текста с мягким свечением */
+.glowingText {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size: 2rem; /* Размер текста */
+    color: #fff; /* Белый цвет текста */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.4),
+    0 0 15px rgba(255, 255, 255, 0.3),
+    0 0 20px rgba(255, 255, 255, 0.2),
+    0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Элемент с мягким свечением */
+.glow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 60%);
+    animation: breathe 3s infinite; /* Анимация дыхания */
+}
+
+/* Анимация дыхания */
+@keyframes breathe {
+    0% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+}
