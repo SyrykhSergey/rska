@@ -1,0 +1,31 @@
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001529; /* Тёмный фон для верхней панели */
+    padding: 0 2%;
+    height: 5vh;
+    width: 96%;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.logout-button {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    color: #fff;
+}
+
+.logout-button:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
